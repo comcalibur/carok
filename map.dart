@@ -1,4 +1,7 @@
+// ignore_for_file: unused_field
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class Map extends StatefulWidget {
@@ -40,7 +43,7 @@ class _MapState extends State<Map> {
           centerTitle: true,
           backgroundColor: Colors.blue,
           elevation: 0,
-          brightness: Brightness.dark,
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
         body: _selectedIndex == 0
             ? Center(
